@@ -11,17 +11,14 @@ html {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  grid-area: banner;
 }
 
 body {
   display: grid;
   grid-template-areas:
-    "main main"
-    "left right"
-}
-
-.main {
-  grid-area: main;
+    "banner banner"
+    "left right";
 }
 
 figure:nth-of-type(1) {
